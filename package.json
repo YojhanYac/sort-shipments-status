@@ -2,7 +2,7 @@
   "name": "sort-string",
   "displayName": "Sort String By Columns",
   "description": "",
-  "version": "0.0.7",
+  "version": "0.1.4",
   "publisher": "YojhanAmachuy",
   "engines": {
     "vscode": "^1.85.0"
@@ -14,18 +14,17 @@
   "main": "./extension.js",
   "icon": "ico-sort-string.png",
   "contributes": {
+    "keybindings": [
+    {
+        "key": "alt+ctrl+u",
+        "command": "extension.sortByColumn7And8",
+        "mac": "cmd+ctrl+u"
+    }
+    ],
     "commands": [
     {
       "command": "extension.sortByColumn7And8",
-      "title": "Sort by Column 7 and 8",
-      "keybindings": [
-      {
-        "command": "extension.sortByColumn7And8",
-        "key": "ctrl+shift+o",
-        "mac": "cmd+shift+o",
-        "when": "editorTextFocus"
-      }
-      ]
+      "title": "Sort by Column 7 and 8"
     }
     ],
     "configuration": {

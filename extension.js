@@ -6,10 +6,10 @@ function sortLinesByColumn7And8(text, firstColumn, secondColumn, splitString) {
 
   // Ordenar las líneas por la columna 7 y luego subordenar por la columna 8
   lines.sort(function (a, b) {
-    var aValue7 = a.split(splitString)[firstColumn]; // Columna 7
-    var bValue7 = b.split(splitString)[firstColumn];
-    var aValue8 = a.split(splitString)[secondColumn]; // Columna 8
-    var bValue8 = b.split(splitString)[secondColumn];
+    var aValue7 = a.split(splitString)[firstColumn - 1]; // Columna 7
+    var bValue7 = b.split(splitString)[firstColumn - 1];
+    var aValue8 = a.split(splitString)[secondColumn - 1]; // Columna 8
+    var bValue8 = b.split(splitString)[secondColumn - 1];
 
     // Comparar por la columna 7
     var compareByColumn7 = aValue7.localeCompare(bValue7);
