@@ -25,6 +25,7 @@ Once installed, simply select the text with columns you want to sort and open th
 Optional: You can use the extension using the keyboard combination
 
 Windows: CTRL + SHIFT + O
+
 Mac: CMD + SHIFT + O
 
 ## Common Errors
